@@ -50,8 +50,8 @@ const StakePage = () => {
           padding: "0 1.6rem",
         }}
       >
-        <Heading>Your staking account</Heading>
-        <Text>Below you can stake, unstake and collect rewards.</Text>
+        <Heading>Your Stable Staker</Heading>
+        <Text>Below you can stake, unstake and collect $ASS Tokens and USDC.</Text>
 
         {!publicKey ? (
           /** Render nothing if there is no wallet connected. */
@@ -70,7 +70,7 @@ const StakePage = () => {
           //     margin: "3.2rem 0"
           //   }}
           // />
-          <Text mt="1.6rem">Farm ID is not configured.</Text>
+          <Text mt="1.6rem">Staker ID is not configured.</Text>
         ) : /** If there is farmerAccount variable, but no address, it means account isn't initialized */
         farmerAccount && !farmerAccount?.identity ? (
           <Button
@@ -215,7 +215,7 @@ const StakePage = () => {
             >
               <TabList>
                 <Tab>Your wallet</Tab>
-                <Tab>Your vault</Tab>
+                <Tab>Your Stable</Tab>
               </TabList>
 
               <TabPanel>
@@ -279,7 +279,7 @@ const StakePage = () => {
                           }}
                           variant="small"
                         >
-                          Select NFTs to move them to your Vault.
+                          Select NFTs to move them to your Stable.
                         </Text>
                       ) : null}
                       <Text>
@@ -304,7 +304,7 @@ const StakePage = () => {
                         alignSelf: "stretch",
                       }}
                     >
-                      <Text>There are no Elven NFTs on your wallet.</Text>
+                      <Text>There are no The Donke Society NFTs on your wallet.</Text>
                     </Flex>
                   )
                 ) : /** No walletNFTs and public key, means it is loading */
@@ -424,7 +424,7 @@ const StakePage = () => {
                             alignSelf: "stretch",
                           }}
                         >
-                          <Text>There are no NFTs on your vault.</Text>
+                          <Text>There are no NFTs on your Stable.</Text>
                         </Flex>
                       )
                     ) : /** No vaultNFTs and public key, means it is loading */
