@@ -37,7 +37,7 @@ const Header = ({ farmId, setFarmId }: Props) => {
             <Flex as="a" sx={{ alignItems: "center", flexDirection: "column" }}>
               <Flex sx={{ alignItems: "center" }}>
                 <Text as="h1" variant="headingSpecial" ml=".4rem">
-                  GEM
+                  Stable
                 </Text>
 
                 <img
@@ -49,7 +49,7 @@ const Header = ({ farmId, setFarmId }: Props) => {
                 />
 
                 <Text as="h1" variant="headingSpecial" ml=".4rem">
-                  FARM
+                  Staker
                 </Text>
               </Flex>
               {/* <Text
@@ -58,7 +58,7 @@ const Header = ({ farmId, setFarmId }: Props) => {
                 }}
                 variant="small"
               >
-                by Gemworks
+                by The Donke Society
               </Text> */}
             </Flex>
           </Link>
@@ -68,8 +68,6 @@ const Header = ({ farmId, setFarmId }: Props) => {
               marginRight: "auto",
             }}
           >
-            &nbsp;&nbsp;&nbsp;&#8226;&nbsp;
-            {process.env.NEXT_PUBLIC_CONNECTION_NETWORK}
           </Text>
 
           <Flex
@@ -151,7 +149,7 @@ const Header = ({ farmId, setFarmId }: Props) => {
               }}
               onClick={() => setIsChangingFarmId((prev) => !prev)}
             >
-              (Change Farm ID)
+              
             </a>
 
             <WalletManager />
