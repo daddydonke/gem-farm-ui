@@ -44,8 +44,8 @@ const Header = ({ farmId, setFarmId }: Props) => {
                   sx={{
                     maxHeight: "4.8rem",
                   }}
-                  src="/images/gemtransparent.gif"
-                  alt="Gemworks"
+                  src="/images/moneydonke.gif"
+                  alt="$ASS"
                 />
 
                 <Text as="h1" variant="headingSpecial" ml=".4rem">
