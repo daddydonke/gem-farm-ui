@@ -37,7 +37,7 @@ const theme: Theme = {
     //     primaryGradient: getGradient("rgb(48, 114, 180, .7)"),
     //     heading: "#1E1E24",
     //     background2: "#1E1E24",
-    //     backgroundGradient: getGradient("rgb(226, 217, 211)")
+    //     backgroundGradient: getGradient("rgb(226, 217, 211)"),
     //   }
     // }
     error: "#B00020",
