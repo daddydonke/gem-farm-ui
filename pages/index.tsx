@@ -70,7 +70,7 @@ const StakePage = () => {
           //     margin: "3.2rem 0"
           //   }}
           // />
-          <Text mt="1.6rem">Staker ID is not configured.</Text>
+          <Text mt="1.6rem">Staker ID is loading and not yet configured.</Text>
         ) : /** If there is farmerAccount variable, but no address, it means account isn't initialized */
         farmerAccount && !farmerAccount?.identity ? (
           <Button
@@ -237,7 +237,7 @@ const StakePage = () => {
 
                           "@media (min-width: 768px)": {
                             gridTemplateColumns:
-                              walletNFTs.length > 9
+                              walletNFTs.length > 14
                                 ? "1fr 1fr 1fr 1fr 1fr 1fr 1fr"
                                 : walletNFTs.length > 4
                                 ? "1fr 1fr 1fr 1fr 1fr"
@@ -352,7 +352,7 @@ const StakePage = () => {
 
                               "@media (min-width: 768px)": {
                                 gridTemplateColumns:
-                                  farmerVaultNFTs.length > 9
+                                  farmerVaultNFTs.length > 14
                                     ? "1fr 1fr 1fr 1fr 1fr 1fr 1fr"
                                     : farmerVaultNFTs.length > 4
                                     ? "1fr 1fr 1fr 1fr 1fr"
@@ -424,7 +424,7 @@ const StakePage = () => {
                             alignSelf: "stretch",
                           }}
                         >
-                          <Text>There are no NFTs on your Stable.</Text>
+                          <Text>There are no NFTs in your Stable.</Text>
                         </Flex>
                       )
                     ) : /** No vaultNFTs and public key, means it is loading */
