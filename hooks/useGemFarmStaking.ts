@@ -16,7 +16,7 @@ const useGemFarmStaking = (farmId: string) => {
   const { connection } = useConnection()
   const wallet = useAnchorWallet() as SignerWalletAdapter
   const { walletNFTs, refetchNFTs } = useWalletNFTs([
-    "9bAVeEj62aBZVspYu5iEo2GSLRzFwLYgEsX5CoeCHN2n",
+    "DCQEZhMF4NHMSVnYXTCfyMUvH9WYaAXaw85CaYqTy9gy",
   ])
 
   const [farmAccount, setFarmAccount] = useState<any>(null) // @TODO add type to farmAccount
